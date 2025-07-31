@@ -35,7 +35,6 @@ async def bbc_links(url):
 async def main():
     url = "https://www.bbc.com/russian/articles/"  # Замените на нужный URL
     links = await bbc_links(url)
-
     print(f"Найдено {len(links)} ссылок на {url}:")
     for i, link in enumerate(links):  # Выводим первые 20 ссылок
         print(f"{i}. {link}")
